@@ -8,11 +8,10 @@ while True:
     user_guess = int(raw_input("guess a number between 1 and 100: "))
     if user_guess != random_num:
         if user_guess > random_num:
-            print "Your number is too high, try again! "
-            print "keep trying ! go low! go low! "
+            print "Your number is too high, try again! \n "
             count += 1
         else:
-            print "Your number is too low, try again! "
+            print "Your number is too low, try again! \n "
             count += 1
 
     else:
