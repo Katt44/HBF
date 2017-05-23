@@ -9,6 +9,7 @@ while True:
     if user_guess != random_num:
         if user_guess > random_num:
             print "Your number is too high, try again! "
+            print "keep trying ! go low! go low! "
             count += 1
         else:
             print "Your number is too low, try again! "
