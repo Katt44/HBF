@@ -11,8 +11,12 @@ count = 0
 while True:
     user_guess = int(raw_input("guess a number between 1 and 100: "))
     #if user_guess not in range(1, 101):
-        print "Nice try.  Please enter a number between 1 and 100!! \n "
-    if user_guess != random_num:
+       # print "Nice try.  Please enter a number between 1 and 100!! \n "
+
+    if user_guess < 1 or user_guess > 100:
+        print "Nice try! Try again! "
+
+    elif user_guess != random_num:
         if user_guess > random_num:
             print "Your number is too high, try again! \n "
             count += 1
